@@ -1,13 +1,22 @@
 def prime?(num)
   num = num.abs
-  n = 4 
-  count = 0 
+  n = 2 
   
-  if (num > 64)
-    if (num%2 != 0 && num%3 != 0)
-      while n < Math.sqrt(num).floor do
+  if (num%2 != 0 && num%3 != 0)
+    if (num > 64)
+      num = Math.sqrt(num).floor
+      until n == num do
         if (num%n == 0)
-          count += 1 
-          
-        
+          return false
+        end
+      end
+    else 
+      until n == num do
+        if (num%n == 0) || (num < 2)
+          return false 
+        end
+      end
+    end
+    return true
+  end
 end
