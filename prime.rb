@@ -8,6 +8,7 @@ def prime?(num)
     elsif (num%n == 0)
       count += 1 
     end
+    n += 1
   end
   return true
 end
