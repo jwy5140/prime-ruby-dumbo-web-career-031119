@@ -1,6 +1,6 @@
 def prime?(num)
   num = num.abs
-  n = 2 
+  n = 1 
   count = 0 
   
   until n >= Math.sqrt(num).floor do
