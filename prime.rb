@@ -4,7 +4,7 @@ def prime?(num)
   count = 0 
   
   until n > Math.sqrt(num).floor do
-    if (num%n == 0 && count >= 3) || num == 1
+    if (num%n == 0 && count >= 3) || num < 2
       return false
     elsif (num%n == 0)
       count += 1 
