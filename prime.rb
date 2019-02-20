@@ -2,7 +2,7 @@ def prime?(num)
   num = num.abs
   n = 2 
   count = 0 
-  binding.pry
+  pry.binding
   until n >= Math.sqrt(num).floor do
     if (num%n == 0 && count >= 3)
       return false
