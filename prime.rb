@@ -10,6 +10,7 @@ def prime?(num)
       count += 1 
     end
     n += 1
+    puts num
   end
   return true
 end
