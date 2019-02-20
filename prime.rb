@@ -3,9 +3,9 @@ def prime?(num)
   n = 2 
   until n >= Math.sqrt(num).floor do
     if (num%n == 0)
-      return true
+      return false
     end
   end
-  return false
+  return true
 end
   
