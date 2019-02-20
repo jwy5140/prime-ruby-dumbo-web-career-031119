@@ -12,7 +12,7 @@ def prime?(num)
     end
     return true
   else
-    while n < Math.sqrt(num).floor do
+    while n < Math.sqrt(num).ceil do
       if num%n == 0
         return false
       end
