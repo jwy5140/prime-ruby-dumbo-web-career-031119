@@ -17,6 +17,9 @@ def prime?(num)
         end
       end
     end
-    return true
+  elsif (num == 2) || (num == 3)
+    return true 
+  else
+    return false
   end
 end
