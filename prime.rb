@@ -3,7 +3,7 @@ def prime?(num)
   n = 1 
   count = 0 
   
-  while n < Math.sqrt(num).floor && num > 4 do
+  while n < Math.sqrt(num).floor && num >= 2 do
     if (num%n == 0)
       count += 1 
     end
