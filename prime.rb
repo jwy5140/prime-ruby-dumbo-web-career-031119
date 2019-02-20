@@ -22,4 +22,5 @@ def prime?(num)
   else
     return false
   end
+  return true
 end
