@@ -7,13 +7,11 @@ def prime?(num)
     if (num%n == 0)
       count += 1 
     end
+    if (n == Math.sqrt(num).floor-1)
+      return true 
+    end
     n += 1 
   end
-  
-  if (count < 3)
-    return true
-  else
-    return false
-  end
+  return false
 end
   
