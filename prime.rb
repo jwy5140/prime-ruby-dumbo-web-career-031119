@@ -7,7 +7,7 @@ def prime?(num)
     if (num%n == 0)
       count += 1 
     end
-    if (n == Math.sqrt(num).floor-1)
+    if (n == Math.sqrt(num).floor-1 && count < 3)
       return true 
     end
     n += 1 
